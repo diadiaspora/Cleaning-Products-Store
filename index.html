@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Productos de limpieza para tu hogar o negocio. Compra fácil y recibe tu pedido a domicilio." />
+  <title>Limpio Hogar | Productos de limpieza con delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span><span data-i18n="announcement">¡Delivery en Lima! Recibe tus productos de limpieza en casa.</span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Limpio Hogar, inicio"><span class="brand-mark">✳</span><span>LIMPIO<span class="brand-light">HOGAR</span><small data-i18n="brandline">Todo limpio. Todo fácil.</small></span></a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#productos" data-i18n="navProducts">Productos</a><a href="#delivery" data-i18n="navDelivery">Delivery</a><a href="#nosotros" data-i18n="navAbout">Nosotros</a>
+    </nav>
+    <div class="header-actions"><div class="language-switch" aria-label="Language"><button class="lang-btn active" data-lang="es">ES</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div><button class="cart-button" id="open-cart" aria-label="Abrir carrito"><span class="cart-icon">▢</span><span class="cart-label" data-i18n="cart">Carrito</span><span class="cart-count" id="cart-count">0</span></button><button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy"><div class="eyebrow"><span></span><span data-i18n="heroEyebrow">TU HOGAR, SIEMPRE FRESCO</span></div>
+        <h1 data-i18n="heroTitle">Un hogar limpio,<br><em>sin complicaciones.</em></h1>
+        <p data-i18n="heroText">Encuentra todo lo que necesitas para limpiar, cuidar y mantener tus espacios. Nosotros lo llevamos hasta tu puerta.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#productos" data-i18n="shopNow">Comprar ahora <span>↗</span></a><a class="button button-whatsapp" id="hero-whatsapp" href="#" target="_blank" rel="noopener"><span class="wa-symbol">◉</span><span data-i18n="orderWhatsapp">Pide por WhatsApp</span></a></div>
+        <div class="hero-trust"><div class="trust-avatars"><span>✓</span><span>✦</span><span>⌂</span></div><span data-i18n="heroTrust">Productos esenciales · Atención cercana · Delivery</span></div>
+      </div>
+      <div class="hero-art" aria-label="Productos de limpieza y hogar"><div class="art-circle"></div><div class="art-tag tag-top">CASA <b>✳</b> LIMPIA</div><div class="product-illustration bottle bottle-one"><div class="bottle-cap"></div><div class="bottle-neck"></div><div class="bottle-label"><b>BRISA</b><small>FRESCURA</small></div></div><div class="product-illustration bottle bottle-two"><div class="bottle-cap"></div><div class="bottle-label"><b>HIGIENE</b><small>MAX</small></div></div><div class="sponge"></div><div class="sparkle sparkle-one">✳</div><div class="sparkle sparkle-two">✦</div><div class="art-tag tag-bottom"><b>01</b> LIMPIEZA PARA TODOS LOS DÍAS</div></div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="hero-line"></span><span data-i18n="heroBottom">HACEMOS MÁS FÁCIL TU DÍA</span></div>
+    </section>
+
+    <section class="benefits" id="delivery"><div class="benefit"><span class="benefit-icon">⌂</span><div><b data-i18n="benefit1Title">Delivery a tu puerta</b><small data-i18n="benefit1Text">Pide desde casa o tu negocio</small></div></div><div class="benefit"><span class="benefit-icon">↗</span><div><b data-i18n="benefit2Title">Pedido por WhatsApp</b><small data-i18n="benefit2Text">Rápido, fácil y directo</small></div></div><div class="benefit"><span class="benefit-icon">✳</span><div><b data-i18n="benefit3Title">Marcas que conoces</b><small data-i18n="benefit3Text">Lo esencial para cada espacio</small></div></div><div class="benefit"><span class="benefit-icon">♡</span><div><b data-i18n="benefit4Title">Atención cercana</b><small data-i18n="benefit4Text">Estamos aquí para ayudarte</small></div></div></section>
+
+    <section class="products-section" id="productos"><div class="section-heading"><div><div class="eyebrow"><span></span><span data-i18n="collectionLabel">NUESTRA SELECCIÓN</span></div><h2 data-i18n="productsTitle">Todo para una limpieza <em>completa.</em></h2><p data-i18n="productsIntro">Tus marcas favoritas y los básicos que no pueden faltar.</p></div><div class="product-count"><b>24</b><span data-i18n="productsCount">productos esenciales</span></div></div>
+      <div class="toolbar"><div class="filters" id="filters"><button class="filter-btn active" data-category="all" data-i18n="filterAll">Todos</button><button class="filter-btn" data-category="superficies" data-i18n="filterSurfaces">Superficies</button><button class="filter-btn" data-category="lavanderia" data-i18n="filterLaundry">Lavandería</button><button class="filter-btn" data-category="cocina" data-i18n="filterKitchen">Cocina</button><button class="filter-btn" data-category="banio" data-i18n="filterBathroom">Baño</button><button class="filter-btn" data-category="utensilios" data-i18n="filterTools">Utensilios</button></div><label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar productos..." data-i18n-placeholder="searchPlaceholder" /></label></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="no-results" id="no-results" hidden data-i18n="noResults">No encontramos productos con esa búsqueda.</div>
+    </section>
+
+    <section class="delivery-banner"><div class="delivery-icon">⌂</div><div><span class="banner-kicker" data-i18n="bannerKicker">¿TE FALTA ALGO EN CASA?</span><h2 data-i18n="bannerTitle">Tu lista de limpieza,<br><em>directo a tu puerta.</em></h2><p data-i18n="bannerText">Escríbenos y coordinamos tu delivery. ¡Así de simple!</p></div><a class="button button-dark" id="banner-whatsapp" href="#" target="_blank" rel="noopener"><span data-i18n="chatUs">Habla con nosotros</span> ↗</a><div class="banner-decoration">✳</div></section>
+
+    <section class="about-section" id="nosotros"><div class="about-number">LH<span> / 01</span></div><div><div class="eyebrow"><span></span><span data-i18n="aboutLabel">LIMPIO HOGAR</span></div><h2 data-i18n="aboutTitle">La limpieza de todos los días, <em>más sencilla.</em></h2></div><p data-i18n="aboutText">Reunimos productos de limpieza, accesorios y básicos para que mantener tu hogar o negocio en orden sea mucho más fácil. Haz tu pedido y coordinamos la entrega contigo por WhatsApp.</p></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">✳</span><span>LIMPIO<span class="brand-light">HOGAR</span><small data-i18n="brandline">Todo limpio. Todo fácil.</small></span></a><span data-i18n="footerText">Productos de limpieza para tu día a día · Perú</span><a href="#inicio" class="back-top" data-i18n="backTop">Volver arriba ↑</a></footer>
+
+  <div class="cart-overlay" id="cart-overlay"></div><aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras" aria-hidden="true"><div class="cart-header"><div><span class="eyebrow" data-i18n="yourOrder">TU PEDIDO</span><h2 data-i18n="cartTitle">Mi carrito <span id="drawer-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>＋</span><h3 data-i18n="emptyCart">Tu carrito está vacío</h3><p data-i18n="emptyCartText">Agrega tus productos favoritos y aquí aparecerán.</p><button class="button button-dark" id="continue-shopping" data-i18n="continueShopping">Ver productos</button></div><div class="cart-footer" id="cart-footer"><div class="cart-total"><span data-i18n="estimatedTotal">Total estimado</span><b id="cart-total">S/ 0.00</b></div><p data-i18n="cartNote">El costo de delivery se coordina por WhatsApp.</p><button class="button button-whatsapp checkout-button" id="checkout-whatsapp"><span class="wa-symbol">◉</span><span data-i18n="sendOrder">Enviar pedido por WhatsApp</span> ↗</button></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
